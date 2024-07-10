@@ -1,2 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+namespace TextRPG2
+{ 
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // player 객체 생성 및 초기화
+            Archer archer = new Archer();
+        }
+    }
+}
