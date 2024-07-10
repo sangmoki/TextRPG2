@@ -5,14 +5,14 @@ namespace TextRPG2
     {
         static void Main(string[] args)
         {
-            // player 객체 생성 및 초기화
-            Player player = new Archer();
-            Monster monster = new Orc();
+            Game game = new Game();
 
-            // 플레이어 공격력 불러오기
-            int damage = player.GetAttack();
-            // 플레이어의 공격력만큼 몬스터가 공격받음
-            monster.OnDamaged(damage);
+            // 계속 반복되기 위함
+            while (true)
+            {
+                // 게임 시작
+                game.Process();
+            }
         }
     }
 }
